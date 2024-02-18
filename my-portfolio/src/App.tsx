@@ -1,7 +1,7 @@
 import React from "react"
 import "./app.scss"
 import Navbar from "./components/Navbar/Navbar"
-import Test from "./components/Test"
+
 
 
 const App: React.FC = () => {

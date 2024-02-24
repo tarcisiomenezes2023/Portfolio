@@ -1,11 +1,23 @@
-import React from 'react'
+import React from 'react';
 
 const Links: React.FC = () => {
+  const items = [
+    "Homepage",
+    "About Me",
+    "Skills",
+    "Contact",
+    "Download CV",
+  ];
+
   return (
     <div className='links'>
-      Links
+      {items.map(item => (
+        <a href={`#${item}`} key={item}>
+          {item}
+        </a>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Links
+export default Links;

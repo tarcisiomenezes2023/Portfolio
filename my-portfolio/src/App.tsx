@@ -11,12 +11,12 @@ return (
       <Navbar />
       </section>
     <section>Parallax</section>
-    <section id="AboutMe">About Me</section>
+    <section id="About">About Me</section>
     <section>Parallax</section>
     <section id="Skills">Portfolio1</section>
     <section>Portfolio2</section>
     <section id="Contact">Contact</section>
-    <section id="DownloadCV">Download CV</section>
+    <section id="Download CV">Download CV</section>
     {/* <Test /> */}
   
    </div>

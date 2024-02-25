@@ -3,7 +3,7 @@ import React from 'react';
 const Links: React.FC = () => {
   const items = [
     "Homepage",
-    "About Me",
+    "About",
     "Skills",
     "Contact",
     "Download CV",

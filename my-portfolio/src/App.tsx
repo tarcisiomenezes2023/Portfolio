@@ -1,7 +1,7 @@
 import React from "react"
 import "./app.scss"
 import Navbar from "./components/Navbar/Navbar"
-
+import Hero from "./components/hero/Hero"
 
 
 const App: React.FC = () => {
@@ -9,6 +9,7 @@ return (
    <div>
     <section id="Homepage">
       <Navbar />
+      <Hero />
       </section>
     <section>Parallax</section>
     <section id="About">About Me</section>

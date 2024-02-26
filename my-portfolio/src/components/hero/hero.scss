@@ -1,0 +1,17 @@
+.hero {
+    height:  calc(100vh - 100px);
+    background: linear-gradient(188deg, #0c0c1d, #111132);
+    position: relative;
+
+    .imageContainer {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+         img {
+            border-radius: 50%;
+        }
+
+    }
+}

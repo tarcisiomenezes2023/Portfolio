@@ -1,18 +1,66 @@
 .hero {
-    height:  calc(100vh - 100px);
+    height: calc(100vh - 100px);
     background: linear-gradient(188deg, #0c0c1d, #111132);
     position: relative;
-
-
-    .imageContainer {
+  
+    .wrapper {
+      max-width: 1366px;
+      height: 100%;
+      margin: auto;
+  
+      .textContainer {
+        width: 50%;
         height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
 
-         img {
-            border-radius: 50%;
+        .social {
+            display: flex;
+            gap: 18px;
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 10px;
+                transition: 0.3s;
+            }
+            img:hover {
+                transform: scale(0.9);
+
+            }
         }
 
+        h2 {
+            font-size: 20px;
+            color: rebeccapurple;
+            letter-spacing: 10px;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+      }
     }
-}
+  
+    .imageContainer {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+  
+      img {
+        border-radius: 50%;
+        height: 40vh;
+        width: 40vh;
+        border: 2px solid rgb(15, 12, 60);
+        box-shadow: 2px 2px 2px rgb(44, 35, 102);
+      }
+    }
+  
+    // Decrease size of the SVG icon
+    svg {
+      height: 35px; // Set desired height
+      width: 35px; // Set desired width
+    }
+  }

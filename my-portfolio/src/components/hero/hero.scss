@@ -1,66 +1,86 @@
 .hero {
-    height: calc(100vh - 100px);
-    background: linear-gradient(188deg, #0c0c1d, #111132);
-    position: relative;
-  
-    .wrapper {
-      max-width: 1366px;
+  height: calc(100vh - 100px);
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-around; // Alterado para space-between
+  overflow-x: hidden;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+
+    .textContainer {
+      width: 50%;
       height: 100%;
-      margin: auto;
-  
-      .textContainer {
-        width: 50%;
-        height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+
+      .social {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 40px;
-
-        .social {
-            display: flex;
-            gap: 18px;
-            img {
-                height: 40px;
-                width: 40px;
-                border-radius: 10px;
-                transition: 0.3s;
-            }
-            img:hover {
-                transform: scale(0.9);
-
-            }
+        gap: 18px;
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 10px;
+          transition: 0.3s;
         }
-
-        h2 {
-            font-size: 20px;
-            color: rebeccapurple;
-            letter-spacing: 10px;
-        }
-
-        h1 {
-            font-size: 60px;
+        img:hover {
+          transform: scale(0.9);
         }
       }
-    }
-  
-    .imageContainer {
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-  
-      img {
-        border-radius: 50%;
-        height: 40vh;
-        width: 40vh;
-        border: 2px solid rgb(15, 12, 60);
-        box-shadow: 2px 2px 2px rgb(44, 35, 102);
+
+      h2 {
+        font-size: 18px;
+        color: #1a1a81;
+        letter-spacing: 10px;
+        font-weight: bolder;
+        width: 400px;
       }
-    }
-  
-    // Decrease size of the SVG icon
-    svg {
-      height: 35px; // Set desired height
-      width: 35px; // Set desired width
+
+      h1 {
+        font-size: 60px;
+        color: #11112e;
+        width: 500px;
+      }
+      
     }
   }
+
+  .imageContainer {
+    display: flex; 
+    align-items: center; 
+
+    img {
+      border-radius: 50%;
+      height: 40vh;
+      width: 40vh;
+      border: 2px solid rgb(15, 12, 60);
+      box-shadow: 2px 2px 2px rgb(44, 35, 102);
+      margin-bottom: 100px;
+    }
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 15vh;
+    bottom: 0px;
+    white-space: nowrap;
+    color: #08081433;
+    word-spacing: 300px;
+    width: 50%;
+    font-weight: bold;
+
+      span {
+        word-spacing: normal;
+      }
+  }
+
+  svg {
+    height: 35px; // Set desired height
+    width: 35px; // Set desired width
+    color: #080814;
+  }
+}

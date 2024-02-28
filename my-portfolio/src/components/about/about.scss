@@ -27,24 +27,63 @@
     .flexContainer {
         flex: 1;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-direction: row-reverse;
         align-items: center;
+        margin-top: 70px;
 
         .textContainer {
             width: 600px;
             padding: 10px;
-        }
 
-        .imageContainer {
-            
+            .title {
+                display: flex;
+                
 
-            img {
-                height: vh;
-                width: 20vh;
+                h1 {
+                    font-size: 6vh;
+                    margin-right: 10px;
+                }
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
             }
             
+            p {
+                margin-top: 20px;
+            }
+
+            
         }
+
+        .ToolBoxContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            background: transparent;
+            border-radius: 5px;
+            
+
+            table {
+                border-collapse: collapse;
+                border-style: solid;
+
+                td {
+                    padding: 10px;
+                    border: 3px solid #ccc;
+                    padding: 20px;
+
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                      }
+                  }
+              }
+          }  
+          
     }
 
 }

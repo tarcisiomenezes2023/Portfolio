@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
       <div className='wrapper'>
         <motion.div className='textContainer' variants={textVariants} initial='initial' animate='animate'>
           <motion.h2 variants={textVariants}>TARCÍSIO MENEZES</motion.h2>
-          <motion.h1 variants={textVariants}>Web Developer</motion.h1>
+          <motion.h1 variants={textVariants}>Frontend Developer</motion.h1>
           <div className='social'>
             <a href='https://github.com/tarcisiomenezes2023' target='blank'><img src='/github.png' alt='' /></a>
             <a href='https://www.linkedin.com/in/tarc%C3%ADsio-menezes-03b8a0233/' target='blank'><img src='/linkedin.png' alt='' /></a>

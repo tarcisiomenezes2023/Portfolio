@@ -1,11 +1,28 @@
 import React from 'react'
 import "./about.scss"
+import { motion } from 'framer-motion'; 
 
+const variants = {
+  initial: {
+    x: -500,
+    y: 100,
+    opactiy: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+},
+};
 
 const About: React.FC = () => {
   return (
 
-    <div className='mainContainer'>
+    <motion.div className='mainContainer' variants ={variants} initial='initial' whileInView="animate">
         <div className='specification'>
         <h1>My toolbox</h1>
         <h1>About me</h1>
@@ -13,19 +30,48 @@ const About: React.FC = () => {
         <div className='HorizontalLine'></div>
         <div className='flexContainer'>
             <div className='textContainer'>
-                <p>I am deeply passionate about web development and thrive on the dynamic nature of this ever-evolving field. 
-                With a fervent love for crafting digital experiences, I find joy in bringing ideas to life through code. 
-                Constantly immersing myself in the latest technologies and best practices, I am committed to continuous improvement 
-                and growth in my craft. Whether it's mastering new frameworks or refining my problem-solving skills,
-                I approach each project with enthusiasm and dedication. I am driven by the challenge of creating elegant solutions
-                to complex problems and am always eager to collaborate with others to push the boundaries of what is possible in web 
-                development.</p>
+              <div className='title'>
+                <h1>I'm a dreamer</h1>
+                <img src='/rocket.png' alt='' />
+              </div>
+                <p> I am deeply passionate about creating engaging and user-friendly digital experiences
+                   through front-end development. With a keen eye for design and a love for problem-solving, I thrive on the challenges
+                    and creativity that front-end development offers.</p>
+
+                <p>Currently, I am actively expanding my skills and knowledge to become a well-rounded full-stack developer.
+                   I am embracing the challenge of mastering back-end technologies and integrating them seamlessly with my front-end
+                    expertise to build robust and scalable applications.</p>
+
+                <p>Coding is not just a career that I want; it's my passion. I am constantly seeking opportunities to learn and grow, 
+                  pushing myself to explore new technologies and methodologies. I believe in the power of continuous improvement 
+                  and am committed to refining my skills to deliver exceptional results.</p>
+
+                <p>I am excited about the endless possibilities that programming offers and am eager to contribute my expertise to
+                   meaningful projects while continuing to evolve as a developer.</p>
             </div>
-            <div className='imageContainer'>
-                <img src='/rocket.png' alt=''/>
+            <div className='ToolBoxContainer'>
+              <table>
+                <tr>
+                  <td><img src='/html.png' alt='' /></td>
+                  <td><img src='/css-3.png' alt='' /></td>
+                  <td><img src='/sass.png' alt='' /></td>
+                  <td><img src='/tailwindcss.png' alt='' /></td>
+                </tr>
+                <tr>
+                  <td><img src='/js.png' alt='' /></td>
+                  <td><img src='/react.png' alt='' /></td>
+                  <td><img src='/typescript.png' alt='' /></td>
+                  <td><img src='/node-js.png' alt='' /></td>
+                </tr>
+                <tr>
+                  <td><img src='/mongo.png' alt='' /></td>
+                  <td><img src='/express-js1.png' alt='' /></td>
+                  <td><img src='/git.png' alt='' /> </td>
+                </tr>
+              </table>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

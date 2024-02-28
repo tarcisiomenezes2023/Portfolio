@@ -29,8 +29,7 @@ const itemVariants = {
 const Links: React.FC = () => {
   const items = [
     "Homepage",
-    "About",
-    "Skills",
+    "About and Skills",
     "Contact",
     "Download CV",
   ];

@@ -1,0 +1,52 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+
+    .specification {
+       height: 100px;
+       display: flex;
+       justify-content: space-between;
+       align-items: end;
+        
+       h1 {
+        font-size: 5vh;
+        font-weight: 800;
+        margin-left: 120px;
+        margin-right: 120px;
+       }
+    }
+
+    .HorizontalLine {
+        width: 84%;
+        margin: auto;
+        height: 2px;
+        background: white;
+        margin-top: 2px;
+    }
+
+    .flexContainer {
+        flex: 1;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        .textContainer {
+            width: 600px;
+            padding: 10px;
+        }
+
+        .imageContainer {
+            
+
+            img {
+                height: vh;
+                width: 20vh;
+            }
+            
+        }
+    }
+
+}
+
+

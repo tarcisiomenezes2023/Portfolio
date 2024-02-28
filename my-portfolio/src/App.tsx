@@ -2,7 +2,7 @@ import React from "react"
 import "./app.scss"
 import Navbar from "./components/Navbar/Navbar"
 import Hero from "./components/hero/Hero"
-
+import About from "./components/about/About"
 
 const App: React.FC = () => {
 return (
@@ -11,11 +11,7 @@ return (
       <Navbar />
       <Hero />
       </section>
-    <section>Parallax</section>
-    <section id="About">About Me</section>
-    <section>Parallax</section>
-    <section id="Skills">Portfolio1</section>
-    <section>Portfolio2</section>
+    <section id="About and Skills"> <About /></section>
     <section id="Contact">Contact</section>
     <section id="Download CV">Download CV</section>
     {/* <Test /> */}

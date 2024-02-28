@@ -3,7 +3,7 @@
   background-color: white;
   position: relative;
   display: flex;
-  justify-content: space-around; // Alterado para space-between
+  justify-content: space-evenly; // Alterado para space-between
   overflow-x: hidden;
 
   .wrapper {
@@ -60,6 +60,10 @@
       border: 2px solid rgb(15, 12, 60);
       box-shadow: 2px 2px 2px rgb(44, 35, 102);
       margin-bottom: 100px;
+      transition: 1s;
+    }
+    img:hover {
+      transform: scale(1.05);
     }
   }
 

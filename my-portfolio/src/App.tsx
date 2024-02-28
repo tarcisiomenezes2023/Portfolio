@@ -17,8 +17,6 @@ return (
       </section>
     <section id="About and Skills"> <About /></section>
     <section id="Contact"> <Contact /> </section>
-    {/* <Test /> */}
-  
    </div>
   )
 }

@@ -67,6 +67,7 @@ const About: React.FC = () => {
                   <td><img src='/mongo.png' alt='' /></td>
                   <td><img src='/express-js1.png' alt='' /></td>
                   <td><img src='/git.png' alt='' /> </td>
+                  <td><img src='/npm.png' alt='' /> </td>
                 </tr>
               </table>
             </div>

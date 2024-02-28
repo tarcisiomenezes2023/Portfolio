@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
                 <motion.h1 variants={variants}>Let's work together</motion.h1>
                 <motion.div variants={variants} className='item'>
                     <h2>Mail</h2>
-                    <span>tarcisiomenezes2019@hotmail.com</span>
+                    <span>tarcisiomenezes2019@outlook.com</span>
                 </motion.div>
                 <motion.div variants={variants} className='item'>
                     <h2>City</h2>

@@ -31,7 +31,6 @@ const Links: React.FC = () => {
     "Homepage",
     "About and Skills",
     "Contact",
-    "Download CV"
   ];
 
   return (

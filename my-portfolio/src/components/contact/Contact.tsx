@@ -23,6 +23,11 @@ const Contact: React.FC = () => {
     const [error, setError] = useState<string | boolean>(false);
     const [success, setSuccess] = useState<string | boolean>(false);
 
+    const handleDownloadCV = () => {
+        // Adicione a lógica para o download do CV aqui
+        // Por exemplo, redirecionar para um link de download ou realizar uma ação de download
+      };
+
     const sendEmail = (e: FormEvent) => {
         e.preventDefault();
 
@@ -63,6 +68,11 @@ const Contact: React.FC = () => {
                 <motion.div variants={variants} className='item'>
                     <h2>Phone</h2>
                     <span>+36 20 3173408</span>
+                </motion.div>
+                <motion.div className='links' variants={variants}>
+                    <motion.button variants={variants} className='CV' onClick={handleDownloadCV}>
+                        Download CV
+                    </motion.button>
                 </motion.div>
             </motion.div>
             <motion.div className='formContainer'>

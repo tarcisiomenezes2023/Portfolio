@@ -1,89 +1,149 @@
+@import "../../app.scss";
+
+
 .mainContainer {
     display: flex;
     flex-direction: column;
 
-    .specification {
-       height: 100px;
-       display: flex;
-       justify-content: space-between;
-       align-items: end;
-        
-       h1 {
-        font-size: 5vh;
-        font-weight: 800;
-        margin-left: 120px;
-        margin-right: 120px;
-       }
+    .Space {
+        height: 100px;
     }
-
-    .HorizontalLine {
-        width: 84%;
-        margin: auto;
-        height: 2px;
-        background: white;
-        margin-top: 2px;
-    }
-
+    
     .flexContainer {
         flex: 1;
         display: flex;
         justify-content: space-around;
-        flex-direction: row-reverse;
         align-items: center;
-        margin-top: 70px;
+        flex-direction: row-reverse;
 
-        .textContainer {
-            width: 600px;
-            padding: 10px;
 
-            .title {
-                display: flex;
-                
-
-                h1 {
-                    font-size: 6vh;
-                    margin-right: 10px;
-                }
-
-                img {
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-            
-            p {
-                margin-top: 20px;
-            }
-
-            
+        @include SmallTablet {
+            margin-top: 40px;
         }
 
-        .ToolBoxContainer {
+        .Container1 {
+
             display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            background: transparent;
-            border-radius: 5px;
-            
+            flex-direction: column;
+            width: 50%;
+            gap: 40px;
 
-            table {
-                border-collapse: collapse;
-                border-style: solid;
-
-                td {
-                    padding: 10px;
-                    border: 3px solid #ccc;
-                    padding: 20px;
+            .HorizontalLine {
+                width: 100%;
+                margin: auto;
+                height: 2px;
+                background: white;
+                margin-top: 2px;
+            }
 
 
+            .textContainer {
+                width: 100%;
+                padding: 10px;
+    
+                .title {
+                    display: flex;
+                    
+                    h1 {
+                        font-size: 6vh;
+                        margin-right: 10px;
+    
+                        @include desktop {
+                            font-size: 4vh;
+                        }
+    
+                        @include SmallTablet {
+                            font-size: 3.5vh;
+                        }
+                    }
+    
                     img {
-                        width: 50px;
-                        height: 50px;
+                        width: 40px;
+                        height: 40px;
+    
+                        @include desktop {
+                            width: 30px;
+                            height: 30px;
+                        }
+    
+                        @include SmallTablet {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+    
+                }
+                
+                p {
+                    margin-top: 20px;
+    
+                    @include desktop {
+                        font-size: 15px;
+                    }
+    
+                    @include tablet {
+                        font-size: 14px;
+                    }
+    
+                    @include SmallTablet {
+                        font-size: 12px;
+                    }
+                }
+    
+                
+            }
+        }
+
+        .Container2 {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            height: 100%;
+            margin-top: 100px;
+
+            .HorizontalLine {
+                width: 100%;
+                margin: auto;
+                height: 2px;
+                background: white;
+                margin-top: 2px;
+            }
+
+            .ToolBoxContainer {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                background: transparent;
+                border-radius: 5px;
+                
+    
+                table {
+                    border-collapse: collapse;
+                    border-style: solid;
+    
+                    td {
+                        border: 3px solid #ccc;
+                        padding: 20px;
+    
+                        @include tablet {
+                            padding: 15px;
+    
+                        }
+    
+    
+                        img {
+                            width: 50px;
+                            height: 50px;
+    
+                            @include tablet {
+                                width: 40px;
+                                height: 40px;
+                            }
+                          }
                       }
                   }
-              }
-          }  
-          
+              }  
+        }         
     }
 
 }

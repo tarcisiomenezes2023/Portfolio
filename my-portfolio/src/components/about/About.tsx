@@ -23,12 +23,13 @@ const About: React.FC = () => {
   return (
 
     <motion.div className='mainContainer' variants ={variants} initial='initial' whileInView="animate">
-        <div className='specification'>
-        <h1>My toolbox</h1>
-        <h1>About me</h1>
-        </div>
-        <div className='HorizontalLine'></div>
+      <div className='Space'></div>
         <div className='flexContainer'>
+          <div className='Container1'>
+        <div className='DivLine2'>
+        <h1>About me</h1>
+        <div className='HorizontalLine'></div>
+        </div>
             <div className='textContainer'>
               <div className='title'>
                 <h1>I'm a dreamer</h1>
@@ -48,6 +49,12 @@ const About: React.FC = () => {
 
                 <p>I am excited about the endless possibilities that programming offers and am eager to contribute my expertise to
                    meaningful projects while continuing to evolve as a developer.</p>
+            </div>
+            </div>
+            <div className='Container2'>
+            <div className='DivLine1'> 
+            <h1>My toolbox</h1>
+            <div className='HorizontalLine'></div>
             </div>
             <div className='ToolBoxContainer'>
               <table>
@@ -70,6 +77,7 @@ const About: React.FC = () => {
                   <td><img src='/npm.png' alt='' /> </td>
                 </tr>
               </table>
+            </div>
             </div>
         </div>
     </motion.div>

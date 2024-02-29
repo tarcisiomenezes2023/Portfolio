@@ -18,19 +18,6 @@
   .wrapper {
     height: 100%;
 
-    @include tablet {
-      width: 500px;
-    }
-
-    @include MidTablet {
-      width: 350px;
-    }
-    @include mobile {
-      
-    }
-
-
-
     .textContainer {
       width: 100%;
       height: 100%;

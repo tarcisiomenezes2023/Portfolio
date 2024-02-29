@@ -36,8 +36,14 @@ section {
     }
 }
 
-@mixin MidTablet {
+@mixin SmallTablet {
     @media (max-width: 800px) {
+        @content;
+    }
+}
+
+@mixin MidTablet {
+    @media (max-width: 900px) {
         @content;
     }
 }

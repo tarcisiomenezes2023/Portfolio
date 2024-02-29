@@ -1,17 +1,38 @@
+@import "../../app.scss";
+
+
 .hero {
   height: calc(100vh - 100px);
   background-color: white;
   position: relative;
   display: flex;
-  justify-content: space-evenly; // Alterado para space-between
+  justify-content: space-evenly; 
   overflow-x: hidden;
 
+  @include desktop {
+    justify-content: space-around;
+  }
+  
+  
+
   .wrapper {
-    max-width: 1366px;
     height: 100%;
 
+    @include tablet {
+      width: 500px;
+    }
+
+    @include MidTablet {
+      width: 350px;
+    }
+    @include mobile {
+      
+    }
+
+
+
     .textContainer {
-      width: 50%;
+      width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -37,13 +58,34 @@
         color: #1a1a81;
         letter-spacing: 10px;
         font-weight: bolder;
-        width: 400px;
+
+        @include tablet {
+          font-size: 14px;
+        }
+        @include MidTablet {
+          font-size: 12px;
+        }
+        @include mobile {
+          letter-spacing: 7px;
+          box-sizing: border-box;
+        }
       }
 
       h1 {
         font-size: 60px;
         color: #11112e;
-        width: 570px;
+
+        @include desktop {
+          font-size: 50px;
+        }
+        @include tablet {
+          font-size: 40px;
+        }
+        @include MidTablet {
+          font-size: 30px;
+        }
+        
+        
       }
       
     }
@@ -61,6 +103,15 @@
       box-shadow: 2px 2px 2px rgb(44, 35, 102);
       margin-bottom: 100px;
       transition: 1s;
+
+      @include tablet {
+        height: 35vh;
+        width: 35vh;
+      }
+      @include mobile {
+        height: 30vh;
+        width: 30svh;
+      }
     }
     img:hover {
       transform: scale(1.05);
@@ -77,6 +128,13 @@
     width: 50%;
     font-weight: bold;
 
+    @include tablet {
+      font-size: 10vh;
+    }
+    @include MidTablet {
+      font-size: 7vh;
+    }
+
       span {
         word-spacing: normal;
       }
@@ -88,3 +146,5 @@
     color: #080814;
   }
 }
+
+

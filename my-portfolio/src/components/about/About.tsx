@@ -34,9 +34,9 @@ const About: React.FC = () => {
                 <h1>I'm a dreamer</h1>
                 <img src='/rocket.png' alt='' />
               </div>
-                <p> I am deeply passionate about creating engaging and user-friendly digital experiences
-                   through front-end development. With a keen eye for design and a love for problem-solving, I thrive on the challenges
-                    and creativity that front-end development offers.</p>
+                <p> I am deeply passionate about coding and user-friendly digital experiences
+                   through programming. With a keen eye for design and a love for problem-solving, I thrive on the challenges
+                    and creativity that web development offers.</p>
 
                 <p>Currently, I am actively expanding my skills and knowledge to become a well-rounded full-stack developer.
                    I am embracing the challenge of mastering back-end technologies and integrating them seamlessly with my front-end

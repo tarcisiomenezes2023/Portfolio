@@ -62,10 +62,6 @@ const Contact: React.FC = () => {
                     <span>tarcisiomenezes2019@outlook.com</span>
                 </motion.div>
                 <motion.div variants={variants} className='item'>
-                    <h2>City</h2>
-                    <span>Gödöllő, HU</span>
-                </motion.div>
-                <motion.div variants={variants} className='item'>
                     <h2>Phone</h2>
                     <span>+36 20 3173408</span>
                 </motion.div>

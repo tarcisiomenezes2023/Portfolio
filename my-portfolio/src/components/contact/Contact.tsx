@@ -47,9 +47,7 @@ const Contact: React.FC = () => {
                 () => {
                     setSuccess(true);
                 },
-                (error) => {
-                    setError(true);
-                },
+                
             );
     };
 

@@ -1,27 +1,20 @@
 @import "../../app.scss";
 
-
 .mainContainer {
     display: flex;
     flex-direction: column;
 
     .Space {
-        height: 100px;
+        height: 80px;
         width: 100%;
-
-        @include MidMobile {
-            height: 70px;
-        }
     }
-    
+
     .flexContainer {
         flex: 1;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: row-reverse;
-        
-
 
         @include SmallTablet {
             margin-top: 40px;
@@ -32,10 +25,9 @@
         @include MidMobile {
             flex-direction: column;
             gap: 20px;
-        } 
+        }
 
         .Container1 {
-
             display: flex;
             flex-direction: column;
             width: 50%;
@@ -47,8 +39,6 @@
             }
 
             .DivLine1 {
-                
-
                 .HorizontalLine {
                     width: 100%;
                     margin: auto;
@@ -57,10 +47,9 @@
                     margin-top: 2px;
                 }
                 h1 {
-                    
                     @include MidMobile {
                         text-align: center;
-                        font-size: 3.5vh;
+                        font-size: 3vh;
                     }
                 }
             }
@@ -68,64 +57,60 @@
             .textContainer {
                 width: 100%;
                 padding: 10px;
-    
+
                 .title {
                     display: flex;
-                    
+
                     h1 {
                         font-size: 6vh;
                         margin-right: 10px;
-    
+
                         @include desktop {
                             font-size: 4vh;
                         }
-    
                         @include SmallTablet {
                             font-size: 3.5vh;
                         }
                         @include MidMobile {
-                            font-size: 3vh;
+                            font-size: 2.5vh;
                         }
                     }
-    
+
                     img {
                         width: 40px;
                         height: 40px;
-    
+
                         @include desktop {
                             width: 30px;
                             height: 30px;
                         }
-    
                         @include SmallTablet {
                             width: 25px;
                             height: 25px;
                         }
                         @include MidMobile {
-                            width: 20px;
-                            height: 20px;
+                            width: 17px;
+                            height: 17px;
                         }
                     }
-    
                 }
-                
+
                 p {
                     margin-top: 20px;
-    
+
                     @include desktop {
                         font-size: 15px;
                     }
-    
                     @include tablet {
                         font-size: 14px;
                     }
-    
                     @include SmallTablet {
                         font-size: 12px;
                     }
+                    @include MidMobile {
+                        font-size: 11px;
+                    }
                 }
-    
-                
             }
         }
 
@@ -138,13 +123,11 @@
 
             @include MidMobile {
                 margin-top: auto;
-                gap: 5px;
-                width: 50%;
+                gap: 0;
+                width: 70%;
             }
 
             .DivLine2 {
-                
-
                 .HorizontalLine {
                     width: 100%;
                     margin: auto;
@@ -153,10 +136,9 @@
                     margin-top: 2px;
                 }
                 h1 {
-                    
                     @include MidMobile {
                         text-align: center;
-                        font-size: 3.5vh;
+                        font-size: 3vh;
                     }
                 }
             }
@@ -171,23 +153,24 @@
                 table {
                     border-collapse: collapse;
                     border-style: solid;
-    
+                    transition: 1s;
+
                     td {
                         border: 3px solid #ccc;
                         padding: 20px;
-    
+
                         @include tablet {
                             padding: 15px;
                         }
                         @include MidMobile {
-                            padding: 5px;
+                            padding: 2px;
                         }
-    
-    
+
                         img {
                             width: 50px;
                             height: 50px;
-    
+                            transition: 0.5s;
+
                             @include tablet {
                                 width: 40px;
                                 height: 40px;
@@ -201,17 +184,23 @@
                                 height: 25px;
                             }
                             @include MidMobile {
-                                width: 20px;
-                                height: 20px;
+                                width: 22px;
+                                height: 22px;
                                 margin-left: 30%;
                             }
-                          }
-                      }
-                  }
-              }  
-        }         
-    }
+                        }
 
+                        &:hover img {
+                            transform: scale(1.5);
+                        }
+                        &:hover {
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 

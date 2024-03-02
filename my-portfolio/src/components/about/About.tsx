@@ -6,7 +6,7 @@ interface AboutProps {}
 
 const variants = {
   initial: {
-    x: -500,
+    x: -200,
     y: 100,
     opacity: 0,
   },
@@ -53,7 +53,7 @@ const About: React.FC<AboutProps> = () => {
             <div className='HorizontalLine'></div>
           </div>
           <div className='ToolBoxContainer'>
-            <table>
+          <table>
               <tbody>
                 <tr>
                   <td><img src='/html.png' alt='' /></td>

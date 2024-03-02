@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .contact {
     height: 100%;
     max-width: 1366px;
@@ -6,19 +8,64 @@
     align-items: center;
     gap: 50px;
 
+    @include desktop {
+        gap: 20px;
+    }
+    @include mobile {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
     .textContainer {
         flex: 1;
         display: flex;
         flex-direction: column;
         gap: 40px;
 
+        @include desktop {
+            gap: 30px;
+        }
+
+        @include mobile {
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+            margin-top: 70px;
+        }
         h1 {
             font-size: 100px;
             line-height: 70px;
+
+            @include desktop {
+                font-size: 70px;
+            }
+            @include MidTablet {
+                font-size: 60px;
+            }
+            @include SmallTablet {
+                font-size: 50px;
+            }
+
+            @include mobile {
+                font-size: 36px;
+            }
+            @include SmallMobile {
+                font-size: 30px;
+            }
+        }
+        h2 {
+            @include SmallMobile {
+                font-size: 17px;
+            }
         }
 
         span {
             font-weight: 300;
+
+            @include SmallMobile {
+                font-size: 13px;
+            }
         }
 
         button {
@@ -39,6 +86,13 @@
     }
     .formContainer {
         flex: 1;
+        position: relative;
+        width: 100%;
+
+        @include mobile {
+            padding: 50px;
+            width: 100%;
+        }
 
         form {
             display: flex;
@@ -51,6 +105,10 @@
                 border: 1px solid white;
                 color: white;
                 border-radius: 5px;
+
+                @include mobile {
+                    padding: 10px;
+                }
             }
 
             button {
@@ -59,6 +117,10 @@
                background-color: orange;
                cursor: pointer;
                font-weight: 500;
+
+               @include mobile {
+                padding: 10px;
+               }
             }
         }   
     

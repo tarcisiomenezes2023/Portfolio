@@ -24,8 +24,14 @@ section {
     scroll-snap-align: center;
 }
 
-@mixin miniMobile {
-    @media (max-width: 500px) {
+@mixin SmallMobile {
+    @media (max-width: 400px) {
+        @content;
+    }
+}
+
+@mixin MidMobile {
+    @media (max-width: 600px) {
         @content;
     }
 }

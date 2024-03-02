@@ -12,12 +12,18 @@
   @include desktop {
     justify-content: space-around;
   }
-  
-  
+
+  @include MidMobile {
+    flex-direction: column-reverse;
+    align-items: center;
+      gap: 20px;
+    
+  }
 
   .wrapper {
     height: 100%;
 
+  
     .textContainer {
       width: 100%;
       height: 100%;
@@ -25,6 +31,11 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
+
+      @include MidMobile {
+        height: 80%;
+        margin: auto;
+      }
 
       .social {
         display: flex;
@@ -34,9 +45,17 @@
           width: 40px;
           border-radius: 10px;
           transition: 0.3s;
+          @include MidMobile {
+            margin-left: 10px;
+          }
+          @include SmallMobile {
+            margin-left: 5px;
+          }
         }
         img:hover {
           transform: scale(0.9);
+
+          
         }
       }
 
@@ -56,6 +75,15 @@
           letter-spacing: 7px;
           box-sizing: border-box;
         }
+        @include MidMobile {
+          letter-spacing: 10px;
+          font-size: 15px;
+        }
+        @include SmallMobile {
+          letter-spacing: 7px;
+          font-size: 12px;
+          text-align: center;
+        }
       }
 
       h1 {
@@ -71,6 +99,13 @@
         @include MidTablet {
           font-size: 30px;
         }
+        @include MidMobile {
+          font-size: 35px;
+          text-align: center;
+        }
+        @include SmallMobile {
+          font-size: 30px;
+        }
         
         
       }
@@ -81,6 +116,11 @@
   .imageContainer {
     display: flex; 
     align-items: center; 
+
+    @include MidMobile {
+      margin-top: 20px;
+      width: 100%;
+    }
 
     img {
       border-radius: 50%;
@@ -98,6 +138,9 @@
       @include mobile {
         height: 30vh;
         width: 30svh;
+      }
+      @include MidMobile {
+        margin: auto;
       }
     }
     img:hover {
@@ -120,6 +163,16 @@
     }
     @include MidTablet {
       font-size: 7vh;
+    }
+    @include mobile {
+      font-size: 6vh;
+    }
+    @include MidMobile {
+      word-spacing: 100px;
+    }
+    @include SmallMobile {
+      font-size: 5vh;
+      word-spacing: 70px;
     }
 
       span {

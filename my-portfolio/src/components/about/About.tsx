@@ -26,7 +26,7 @@ const About: React.FC = () => {
       <div className='Space'></div>
         <div className='flexContainer'>
           <div className='Container1'>
-        <div className='DivLine2'>
+        <div className='DivLine1'>
         <h1>About me</h1>
         <div className='HorizontalLine'></div>
         </div>
@@ -46,13 +46,10 @@ const About: React.FC = () => {
                 <p>Coding is not just a career that I want; it's my passion. I am constantly seeking opportunities to learn and grow, 
                   pushing myself to explore new technologies and methodologies. I believe in the power of continuous improvement 
                   and am committed to refining my skills to deliver exceptional results.</p>
-
-                <p>I am excited about the endless possibilities that programming offers and am eager to contribute my expertise to
-                   meaningful projects while continuing to evolve as a developer.</p>
             </div>
             </div>
             <div className='Container2'>
-            <div className='DivLine1'> 
+            <div className='DivLine2'> 
             <h1>My toolbox</h1>
             <div className='HorizontalLine'></div>
             </div>

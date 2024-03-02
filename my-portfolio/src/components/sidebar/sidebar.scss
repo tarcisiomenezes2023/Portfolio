@@ -14,6 +14,23 @@
         bottom: 0;
         width: 400px;
         background: white;
+
+        @include desktop {
+          width: 350px;
+        }
+        @include tablet {
+          width: 300px;
+        }
+        @include SmallTablet {
+          width: 250px;
+        }
+        @include MidMobile {
+          width: 200px;
+        }
+        @include SmallMobile {
+          width: 150px;
+        }
+
       .links {
         position: absolute;
         width: 100%;
@@ -26,6 +43,19 @@
 
         a {
             font-size: 40px;
+
+            @include desktop {
+              font-size: 30px;
+            }
+            @include MidTablet {
+              font-size: 25px;
+            }
+            @include mobile {
+              font-size: 20px;
+            }
+            @include MidMobile {
+              font-size: 15px;
+            }
         }
       }
     }

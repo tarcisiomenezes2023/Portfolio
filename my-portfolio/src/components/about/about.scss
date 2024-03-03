@@ -114,6 +114,9 @@
                     @include MidMobile {
                         font-size: 11px;
                     }
+                    @include SmallMobile {
+                        margin-top: 10px;
+                    }
                 }
             }
         }

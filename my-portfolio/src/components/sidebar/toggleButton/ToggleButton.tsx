@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 
+
 interface Props {
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }

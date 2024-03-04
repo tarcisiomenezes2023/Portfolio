@@ -24,9 +24,9 @@ const Contact: React.FC = () => {
     const [success, setSuccess] = useState<string | boolean>(false);
 
     const handleDownloadCV = () => {
-        // Adicione a lógica para o download do CV aqui
-        // Por exemplo, redirecionar para um link de download ou realizar uma ação de download
-      };
+        const cvUrl = 'https://drive.google.com/file/d/1nq6G591W14bUvLfGxgbcnVuuYX88o3G1/view?usp=sharing'; 
+        window.open(cvUrl, '_blank'); 
+    };
 
     const sendEmail = (e: FormEvent) => {
         e.preventDefault();
@@ -65,12 +65,12 @@ const Contact: React.FC = () => {
                 </motion.div>
                 <motion.div className='links' variants={variants}>
                     <motion.button variants={variants} className='CV' onClick={handleDownloadCV}>
-                        Download CV
+                        Resume
                     </motion.button>
                 </motion.div>
             </motion.div>
-            <motion.div className='formContainer'>
-                <motion.form ref={formRef} onSubmit={sendEmail}>
+            <motion.div variants={variants} className='formContainer'>
+                <motion.form variants={variants} ref={formRef} onSubmit={sendEmail}>
                     <input type='text' name='from_name' required placeholder='Name' />
                     <input type='email' name='email' required placeholder='Email' />
                     <textarea name='message' rows={8} placeholder='Message' />

@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
       </div>
       <motion.div className='slidingTextContainer'
        variants={SliderVariants} initial="initial" animate="animate">
-        <span>Open Source</span> Passionate Enthusiast Dreamer
+        <span>Open Source</span> Passionate Enthusiastic Dreamer
       </motion.div>
       <div className='imageContainer'>
         <img src='/hero.png' alt='My profile' />

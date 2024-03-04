@@ -13,9 +13,11 @@ const navbar: React.FC = () => {
         <motion.span initial={{opacity: 0, scale: 0.5}}
          animate={{opacity: 1, scale: 1}} 
          transition={{duration: 0.5}}></motion.span>
-        <div className='Logo'>
-          <img src='/Mylogo2.png' alt='' />
-        </div>
+        <motion.div className='Logo'>
+          <motion.img initial={{opacity: 0, scale: 0.5}}
+         animate={{opacity: 1, scale: 1}} 
+         transition={{duration: 0.5}} src='/Mylogo2.png' alt='' />
+        </motion.div>
       </div>
     </div>
   )

@@ -36,7 +36,7 @@ const About: React.FC<AboutProps> = () => {
               <h1>I'm a dreamer</h1>
               <img src='/rocket.png' alt='' />
             </div>
-            <p>I'm brazilian, living in Gödöllő, Hungary, and deeply passionate about coding and user-friendly digital experiences
+            <p>Brazilian, living in Gödöllő, Hungary, and deeply passionate about coding and user-friendly digital experiences
                through programming. With a keen eye for design and a love for problem-solving, I thrive on the challenges
                and creativity that web development offers.</p>
 

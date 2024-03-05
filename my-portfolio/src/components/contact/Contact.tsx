@@ -1,7 +1,15 @@
 import React, { useRef, FormEvent, useState } from 'react';
 import "./contact.scss";
 import { motion } from "framer-motion";
-import emailjs from '@emailjs/browser';
+import emailjs, { EmailJSResponseStatus} from '@emailjs/browser';
+
+
+
+interface EmailOptions {
+    publicKey: string;
+    from_name: string;
+    message: string;
+}
 
 const variants = {
     initial: {
@@ -37,17 +45,23 @@ const Contact: React.FC = () => {
         const from_name = formData.get('from_name') as string;
         const message = formData.get('message') as string;
 
+        const options: EmailOptions = {
+            publicKey: 'xTZ1oDxi9tNvfX-oj',
+            from_name: from_name,
+            message: message
+        };
+
         emailjs
-            .sendForm('service_fqy110g', 'template_cablvxf', formRef.current, {
-                publicKey: 'xTZ1oDxi9tNvfX-oj',
-                from_name: from_name,
-                message: message
-            })
+            .sendForm('service_fqy110g', 'template_cablvxf', formRef.current, options)
             .then(
-                () => {
+                (response: EmailJSResponseStatus) => {
+                    console.log('Email sent:', response.status);
                     setSuccess(true);
                 },
-                
+                (error: Error) => {
+                    console.error('Email error:', error);
+                    setError(true);
+                }
             );
     };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import "./hero.scss";
-import { motion } from 'framer-motion';
+import { Variants, motion } from 'framer-motion';
 
 const textVariants = {
   initial: {
@@ -27,12 +27,12 @@ const textVariants = {
   },
 };
 
-const SliderVariants = {
+const SliderVariants: Variants = {
   initial: {
     x: 0,
   },
   animate: {
-    x: "-450%",
+    x: -450,
     transition: {
     repeat: Infinity,
     repeatType: "mirror",

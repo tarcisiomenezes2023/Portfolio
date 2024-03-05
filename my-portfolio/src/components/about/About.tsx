@@ -3,7 +3,7 @@ import "./about.scss";
 import { motion } from 'framer-motion'; 
 
 interface AboutProps {}
-
+/* Variants */
 const variants = {
   initial: {
     x: -200,

@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './sidebar.scss';
-import ToggleButton from "./toggleButton/ToggleButton";
-import Links from './links/Links';
 
 const variants = {
   open: {
@@ -32,9 +30,8 @@ const Sidebar: React.FC = () => {
   return (
     <motion.div className='sidebar' animate={open ? 'open' : 'closed'}>
       <motion.div className='bg' variants={variants}>
-        <Links />
+      <a href='https://github.com/tarcisiomenezes2023' target='blank'><img src='/github.png' alt='' /></a>
       </motion.div>
-      <ToggleButton setOpen={setOpen} />
     </motion.div>
   );
 };

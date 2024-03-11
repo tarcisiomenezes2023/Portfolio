@@ -24,7 +24,7 @@ const variants = {
 
 
 const Sidebar: React.FC = () => {
-  const [open, setOpen] = useState<boolean>(false);
+  const [open] = useState<boolean>(false);
 
 
   return (

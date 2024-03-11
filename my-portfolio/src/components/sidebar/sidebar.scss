@@ -42,6 +42,11 @@
           width: 50px;
           margin-left: 25px;
           margin-top: 25px;
+          transition: 0.5s;
+        }
+
+        img:hover {
+          transform: scale(1.25);
         }
 
     }

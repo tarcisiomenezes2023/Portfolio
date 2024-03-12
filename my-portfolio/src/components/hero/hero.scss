@@ -158,23 +158,26 @@
     width: 100%;
     font-weight: bold;
 
-    @include tablet {
+    @include desktop {
       font-size: 13vh;
     }
+
     @include MidTablet {
       font-size: 12vh;
     }
-    @include mobile {
+
+    @include SmallTablet {
       font-size: 11vh;
 
     }
     @include MidMobile {
-      word-spacing: 200px;
+      word-spacing: 250px;
+      font-size: 10vh;
     }
 
     @include SmallMobile {
       font-size: 8vh;
-      word-spacing: 200px;
+      word-spacing: 350px;
     }
 
       span {

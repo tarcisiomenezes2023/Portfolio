@@ -1,9 +1,7 @@
-import React, { useRef, FormEvent, useState } from 'react';
+import React, { useRef, FormEvent, useState, useEffect } from 'react';
 import "./contact.scss";
 import { motion } from "framer-motion";
 import emailjs, { EmailJSResponseStatus} from '@emailjs/browser';
-
-
 
 interface EmailOptions {
     publicKey: string;
@@ -64,6 +62,13 @@ const Contact: React.FC = () => {
                 }
             );
     };
+
+    useEffect(() => {
+        const inputs = formRef.current?.querySelectorAll('input, textarea');
+        inputs?.forEach(input => {
+            input.addEventListener('focus', (e) => e.preventDefault());
+        });
+    }, []);
 
     return (
         <motion.div className='contact' variants={variants} initial="initial" whileInView="animate">
